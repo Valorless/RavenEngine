@@ -37,7 +37,7 @@ import javax.annotation.Nullable;
 public final class Engine extends JavaPlugin implements Listener {
 
 	/** The backing {@link JavaPlugin} instance (same object as {@link #instance}). */
-	private static JavaPlugin plugin;
+	static JavaPlugin plugin;
 
 	/** The singleton {@link Engine} instance. */
 	private static Engine instance;

@@ -65,7 +65,7 @@ public interface ConfigValidation {
      * @return a Config instance with all validation entries registered and validated
      */
     static Config validateAndGetConfig(String conf, List<String> ignoredKeys) {
-        JavaPlugin plugin = Engine.getPlugin();
+        JavaPlugin plugin = Engine.plugin;
         Config config = new Config(plugin, conf);
         InputStream resource = plugin.getResource(conf);
         if (resource == null) {

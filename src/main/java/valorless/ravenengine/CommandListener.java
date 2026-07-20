@@ -32,11 +32,11 @@ public class CommandListener implements CommandExecutor {
      */
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-    	Log.debug(Engine.getPlugin(), "Sender: " + sender.getName());
-    	Log.debug(Engine.getPlugin(), "Command: " + command.toString());
-    	Log.debug(Engine.getPlugin(), "Label: " + label);
+    	Log.debug(Engine.plugin, "Sender: " + sender.getName());
+    	Log.debug(Engine.plugin, "Command: " + command.toString());
+    	Log.debug(Engine.plugin, "Label: " + label);
     	for(String a : args) {
-    		Log.debug(Engine.getPlugin(), "Argument: " + a);
+    		Log.debug(Engine.plugin, "Argument: " + a);
     	}
 		if (args.length == 1){
 			if(args[0].equalsIgnoreCase("reload") && sender.hasPermission("ravencrest.reload")) {
