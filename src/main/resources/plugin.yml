@@ -1,0 +1,17 @@
+name: RavenEngine
+main: valorless.ravenengine.Engine
+version: version-number
+author: Valorless
+depend:
+- ValorlessUtils
+- Nexo
+api-version: 1.21.10
+commands:
+  ravenengine:
+    description: Main command.
+    usage: /<command>
+    permission: ravencrest.reload
+permissions:
+    ravencrest.reload:
+        description: Allows the player to reload the plugin.
+        default: op
