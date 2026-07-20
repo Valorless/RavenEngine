@@ -237,8 +237,9 @@ public final class Engine extends JavaPlugin implements Listener {
 	 * @param updateCallback the callback to invoke when the item is updated
 	 */
 	public void registerNexoUpdateCallback(Key key, UpdateCallback updateCallback) {
+		Log.info(plugin, "Registering Nexo update callback for key: " + key.asString());
 		if(!nexoReady) {
-			Log.info(plugin, "Nexo isn't ready yet, storing key for later: " + key.asString());
+			Log.info(plugin, "Nexo isn't ready yet, storing key for later registration.");
 			keys.put(key, updateCallback);
 			return;
 		}
