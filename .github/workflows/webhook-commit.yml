@@ -83,12 +83,12 @@ jobs:
                   "name": author,
                   "icon_url": f"https://github.com/{author}.png?size=64"
               },
-              "title": f"Engine: {title}" or "(no title)",
+              "title": title or "(no title)",
               **({"description": body} if body else {}),
               "fields": [
                   {
                       "name": "",
-                      "value": f"[`{short_sha}`]({commit_url})  •  {branch}  •  <t:{unix_time}:f> (<t:{unix_time}:R>)",
+                      "value": f"[`{short_sha}`]({commit_url})  •  Engine •  <t:{unix_time}:f> (<t:{unix_time}:R>)",
                       "inline": True
                   }
               ],
